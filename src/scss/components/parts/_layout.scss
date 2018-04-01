@@ -9,5 +9,15 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	max-width: $base-content-width;
 	margin: 0 auto
+}
+
+.l-halfColumn {
+	flex: 1 0 0px;
+	max-width: ($base-content-width - $column-space)/2;
+	margin-right: $column-space;
+	&:nth-child(even) {
+		margin-right: 0;
+	}
 }
