@@ -1,0 +1,25 @@
+.sectionLabel {
+	display: flex;
+	flex: 1 1 auto;
+	align-items: center;
+	padding: 14px inherit;
+	padding-bottom: 14px;
+	line-height: 1.0;
+	color: $color-main-text;
+	text-transform: uppercase;
+	font-size: 22px;
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+		flex: 1 0 10%;
+		height: 0;
+		border-bottom: 1px solid $color-main-text;
+	}
+	&::before {
+		margin-right: 22px;
+	}
+	&::after {
+		margin-left: 22px;
+	}
+}
