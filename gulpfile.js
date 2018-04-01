@@ -28,6 +28,7 @@ gulp.task('bs', function() {
 gulp.task('scss', function() {
   return gulp.src(paths.scssSrc)
     .pipe($.sourcemaps.init())
+      .pipe($.sassGlob())
       .pipe($.sass()).on('error', $.sass.logError)
       .pipe($.autoprefixer({
         browsers: ['last 2 versions']
