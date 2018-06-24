@@ -12,4 +12,11 @@
 		padding: $space-unit*1.5;
 		line-height: 1.5;
 	}
+	// font-awesomeでアイコンを設定する
+	&__icon {
+		margin-bottom: $space-unit;
+		padding: $sp-space-unit;
+		font-size: 26px;
+		color: $color-link;
+	}
 }

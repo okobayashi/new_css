@@ -8,6 +8,9 @@
 	color: $color-main-text;
 	text-transform: uppercase;
 	font-size: 22px;
+
+	@include menu-font;
+
 	&::before,
 	&::after {
 		content: '';
@@ -22,4 +25,10 @@
 	&::after {
 		margin-left: 22px;
 	}
+}
+
+.logo {
+	text-transform: uppercase;
+	font-size: 26px;
+	@include menu-font;
 }

@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 @import "./base/variables";
 @import "./base/reset";
+@import "./base/mixins";
+@import "./base/lib/fa/before/**";
+@import "./base/lib/fa/fontawesome/**";
 @import "./components/common/**";
 @import "./components/parts/**";
