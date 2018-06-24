@@ -1,0 +1,15 @@
+.NewsList {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 0 $space-unit/2;
+	&__item {
+		display: table-row;
+	}
+	&__head {
+		display: table-cell;
+		padding-right: $column-space;
+	}
+	&__body {
+		display: table-cell;
+	}
+}
