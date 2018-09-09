@@ -7,12 +7,14 @@
 <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 <body>
-<div id="wrapper">
-<header class="Header">
+<div id="wrapper" class="SpMenu__wrapper">
+<div id="overlay" class="SpMenu__overlay"></div>
+<header class="Header l-column">
+<div id="menu-button" class="Header__button"><span class="fa fa-bars"></span></div>   
 <div class="Header__head">
 <h1 class="logo">Site Name</h1>
 </div>
-<nav class="Header__body">
+<nav class="Header__body SpMenu">
 <ul class="Menu">
 <li><a href="#" class="Menu__item">Services</a></li>
 <li><a href="#" class="Menu__item">Work</a></li>
@@ -133,6 +135,16 @@
 </li>
 </ol>
 </section>
+<div class="l-column u-mt60px u-mb100px">
+<div class="l-row">
+<a href="#" class="l-halfColumn">
+<img src="./dist/images/top/top_banner_1.jpg" class="l-fitImg" alt="Dummy banner"> 
+</a>
+<a href="#" class="l-halfColumn">
+<img src="./dist/images/top/top_banner_2.jpg" class="l-fitImg" alt="Dummy banner"> 
+</a>
+</div>
+</div>
 <footer class="Footer">
 <div class="l-row l-column">
 <div class="Footer__head">

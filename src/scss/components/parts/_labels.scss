@@ -3,7 +3,7 @@
 	flex: 1 1 auto;
 	align-items: center;
 	padding: 14px inherit;
-	padding-bottom: 14px;
+	padding-bottom: 14px !important;
 	line-height: 1.0;
 	color: $color-main-text;
 	text-transform: uppercase;
@@ -31,4 +31,9 @@
 	text-transform: uppercase;
 	font-size: 26px;
 	@include menu-font;
+}
+
+.l-fitImg {
+	max-width: 100%;
+	max-height: 100%;
 }
