@@ -3,6 +3,10 @@
 	max-width: $base-content-width;
 	margin: 0 auto;
 	padding: $space-unit;
+	@include mq-sp {
+		padding: 0 $space-unit*2;
+		width: auto;
+	}
 }
 
 .l-row {
@@ -20,6 +24,12 @@
 	&:nth-child(even) {
 		margin-right: 0;
 	}
+	@include mq-sp {
+		display: flex;
+		flex: 1 1 100%;
+		margin-right: 0;
+		max-width: none;
+	}
 }
 
 .l-quaterColumn {
@@ -29,6 +39,11 @@
 	&:nth-child(4n) {
 		margin-right: 0;
 	}
+	@include mq-sp {
+		flex: 1 1 100%;
+		max-width: none;
+		margin: 0;
+	}
 }
 
 .l-halfTitle {
@@ -36,4 +51,7 @@
 	flex: 1 1 50%;
 	margin: 0;
 	padding: 0;
+	@include mq-sp {
+		flex-basis: 100%;
+	}
 }

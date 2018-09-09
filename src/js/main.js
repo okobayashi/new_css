@@ -17,7 +17,7 @@
         overlay = document.getElementById('overlay'),
         toggleMenu = toggle(wrapper, 'isOpened');
 
-    if(menuButton && overlay) {
+    if(menuButton || overlay) {
         menuButton.addEventListener('click', toggleMenu, false);
         overlay.addEventListener('click', toggleMenu, false);
     }
