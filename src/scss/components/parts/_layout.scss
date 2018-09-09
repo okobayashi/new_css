@@ -14,7 +14,10 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	max-width: $base-content-width;
-	margin: 0 auto
+	margin: 0 auto;
+	@include mq-sp {
+		display: block;
+	}
 }
 
 .l-halfColumn {
@@ -25,8 +28,7 @@
 		margin-right: 0;
 	}
 	@include mq-sp {
-		display: flex;
-		flex: 1 1 100%;
+		display: block;
 		margin-right: 0;
 		max-width: none;
 	}
