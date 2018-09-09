@@ -12,6 +12,9 @@
 	&__sub {
 		flex: 1 1 45%;
 		margin-right: 20px;
+		.EntryPanel--vertical & {
+			margin-right: 0;
+		}
 	}
 	&__thumb {
 		width: 100%;
@@ -31,5 +34,8 @@
 	&__foot {
 		margin-top: 10px;
 		text-align: right;
+	}
+	&--vertical {
+		display: block;
 	}
 }

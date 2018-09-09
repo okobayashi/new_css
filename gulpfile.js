@@ -23,7 +23,8 @@ var paths = {
 gulp.task('bs', function() {
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: "./",
+      index  : "campaign.html" 
     },
     notify  : true,
     xip     : false
