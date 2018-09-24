@@ -1,0 +1,100 @@
+.l-column {
+	flex: 0 1 $base-content-width;
+	max-width: $base-content-width;
+	margin: 0 auto;
+	padding: $space-unit;
+	@include mq-sp {
+		padding: 0 $space-unit*2;
+		width: auto;
+	}
+}
+
+.l-row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: $base-content-width;
+	margin: 0 auto;
+	@include mq-sp {
+		display: block;
+	}
+}
+
+.l-halfColumn {
+	flex: 1 0 0px;
+	max-width: ($base-content-width - $column-space)/2;
+	margin-right: $column-space;
+	&:nth-child(even) {
+		margin-right: 0;
+	}
+	@include mq-sp {
+		display: block;
+		margin-right: 0;
+		max-width: none;
+	}
+}
+
+.l-quaterColumn {
+	flex: 1 0 0px;
+	max-width: ($base-content-width - $column-space*3)/4;
+	margin-right: $column-space;
+	&:nth-child(4n) {
+		margin-right: 0;
+	}
+	@include mq-sp {
+		flex: 1 1 100%;
+		max-width: none;
+		margin: 0;
+	}
+}
+
+.l-halfTitle {
+	display: flex;
+	flex: 1 1 50%;
+	margin: 0;
+	padding: 0;
+	@include mq-sp {
+		flex-basis: 100%;
+	}
+}
+
+.l-tripartitionColumn {
+	flex: 1 0 0px;
+	max-width: ($base-content-width - $column-space*(2/3))/3;
+	margin-right: $column-space*2/3;
+	width: ($base-content-width - $column-space*6)/3;
+	@include mq-sp {
+		flex: 1 1 100%;
+		max-width: none;
+		width: 100%;
+		margin: 0;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.l-content {
+	display: flex;
+	justify-content: space-between;
+	flex: 0 1 $base-content-width;
+	@include mq-sp {
+		flex-direction: column;
+	}
+}
+
+.l-main {
+	flex: 0 2 auto;
+	margin: 0 $space-unit;
+	max-width: 865px;
+}
+
+.l-sub {
+	flex: 0 0 275px;
+	margin: 0 $space-unit;
+	margin-left: $column-space;
+	@include mq-sp {
+		flex: 1 1 100%;
+		margin: $space-unit;
+	}
+}

@@ -1,16 +1,191 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Css Cafe</title>
-    <link rel="stylesheet" href="./dist/css/main.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Css Cafe</title>
+<link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 <body>
+<div id="wrapper" class="SpMenu__wrapper">
+<div id="overlay" class="SpMenu__overlay"></div>
+<header class="Header l-column">
+<div id="menu-button" class="Header__button"><span class="fa fa-bars"></span></div>   
+<div class="Header__head">
+<h1 class="logo">Site Name</h1>
+</div>
+<nav class="Header__body SpMenu">
+<ul class="Menu">
+<li><a href="#" class="Menu__item">Services</a></li>
+<li><a href="#" class="Menu__item">Work</a></li>
+<li><a href="#" class="Menu__item">About</a></li>
+<li><a href="#" class="Menu__item">Blog</a></li>
+<li><a href="#" class="Menu__item">Contact</a></li>
+</ul>
+</nav>
+</header>
+<div class="ImageSlide Section">
+<ul id="Slide" class="ImageSlide__main">
+<li class="ImageSlide__item js-slide-item">
+<a href="#"><img class="ImageSlide__image" src="./dist/images/top/slide1.jpg" alt="about our tea" width="1180" height="490"></a>
+</li>
+<li class="ImageSlide__item js-slide-item">
+<a href="#"><img class="ImageSlide__image" src="./dist/images/top/slide2.jpg" alt="about our coffee" width="1180" height="490"></a>
+</li>
+<li class="ImageSlide__item js-slide-item">
+<a href="#"><img class="ImageSlide__image" src="./dist/images/top/slide3.jpg" alt="about our foods" width="1180" height="490"></a>
+</li>
+</ul>
+<div class="ImageSlide__sub">
+<span class="ImageSlide__dot js-slide-point">image1</span>
+<span class="ImageSlide__dot js-slide-point">image2</span>
+<span class="ImageSlide__dot js-slide-point">image3</span>
+</div>
+</div>
 
+<section class="Section l-column">
+<div class="Section__head">
+<h2 class="sectionLabel">campaign</h2>
+</div>
+<div class="l-row">
+<section class="EntryPanel EntryPanel--vertical l-tripartitionColumn">
+<div class="EntryPanel__sub">
+<img class="EntryPanel__thumb" src="./dist/images/campaign/cp_entry1.jpg" alt="フルーツとグラノーラ">
+</div>
+<div class="EntryPanel__main">
+<h3 class="EntryPanel__head">1日のはじまりに</h3>
+<div class="EntryPanel__body">
+大切なあの方にありがとうを届けたい。<br>
+心も体も温まる素敵なギフト。<br>
+プレゼントキャンペーン実施中
+</div>
+<div class="EntryPanel__foot">
+<a href="#" class="button">READ MORE</a>
+</div>
+</div>
+</section>
+<section class="EntryPanel EntryPanel--vertical l-tripartitionColumn">
+<div class="EntryPanel__sub">
+<img class="EntryPanel__thumb" src="./dist/images/campaign/cp_entry2.jpg" alt="自家製グラノーラとカフェオレ">
+</div>
+<div class="EntryPanel__main">
+<h3 class="EntryPanel__head">自家製グラノーラ</h3>
+<div class="EntryPanel__body">
+大切なあの方にありがとうを届けたい。<br>
+心も体も温まる素敵なギフト。<br>
+プレゼントキャンペーン実施中
+</div>
+<div class="EntryPanel__foot">
+<a href="#" class="button">READ MORE</a>
+</div>
+</div>
+</section>
+<section class="EntryPanel EntryPanel--vertical l-tripartitionColumn">
+<div class="EntryPanel__sub">
+<img class="EntryPanel__thumb" src="./dist/images/campaign/cp_entry3.jpg" alt="自家製レモネード">
+</div>
+<div class="EntryPanel__main">
+<h3 class="EntryPanel__head">フルーツの恵みであたたまる</h3>
+<div class="EntryPanel__body">
+大切なあの方にありがとうを届けたい。<br>
+心も体も温まる素敵なギフト。<br>
+プレゼントキャンペーン実施中
+</div>
+<div class="EntryPanel__foot">
+<a href="#" class="button">READ MORE</a>
+</div>
+</div>
+</section>
+</div>
+</section>
+<section class="Section">
+<div class="Section__item Campaign__sweets">
+<div class="Campaign__sweets__main">
+<h2 class="Campaign__sweets__head">Special Sweets</h2>
+<div class="Campaign__sweets__body">
+<p>毎日日替わりでコーヒーに合うスウィーツをご用意しています。</p>
+<p>オープン以来人気NO.1のスウィーツメニューSPECIAL NUTS CHOCOLATEは<br>
+パリの老舗で修行を積んだショコラティwが提案するとっておきのチョコレート。</p>
+<p>香ばしいヘーゼルナッツのかおりに甘酸っぱいクランベリーがコーヒーとベストマッチ！</p>
+<p>他では味わえない魔法のくちどけをぜひ、おためしください。</p>
+</div>
+<a href="#" class="Campaign__sweets__button">OUE SWEETS</a>
+</div>
+</div>
+</section>
+<section class="Section">
+<div class="Section__item l-column">
+<div class="l-row">
+<a href="#" class="IconPanel l-tripartitionColumn">
+<span class="IconPanel__icon fas fa-heart"></span>
+<h3 class="IconPanel__head">魔法のくちどけ</h3>
+<p class="IconPanel__body">
+SPECIAL NUTS CHOCOLATEは最上級のカカオ豆を使用して作っております。<br>
+製法に合った配合で作り出すSWEETSはまさに絶品。魔法の口溶けをご体験してみてください。
+</p>
+</a>
+<a href="#" class="IconPanel l-tripartitionColumn">
+<span class="IconPanel__icon fas fa-leaf"></span>
+<h3 class="IconPanel__head">選び抜かれた素材</h3>
+<p class="IconPanel__body">
+素材は世界各地から選び抜かれた素材のみを使用しています。じっくり味わって、素材の違いを感じてください。
+</p>
+</a>
+<a href="#" class="IconPanel l-tripartitionColumn">
+<span class="IconPanel__icon fas fa-smile"></span>
+<h3 class="IconPanel__head">プレゼントにも</h3>
+<p class="IconPanel__body">
+SPECIAL SWEETSはテイクアウトも可能です。<br>
+お家でのティータイムや、友達へのプレゼントにもぴったりです。オリジナルマグカップとコーヒー、SPECIAL SWEETSのセットもあります
+</p>
+</a>
+</div>
+</div>
+</section>
+
+<section class="Section l-column">
+<div class="Section__head">
+<h2 class="sectionLabel">More Info</h2>
+</div>
+<form action="campaign_submit" method="GET" accept-charset="utf-8" aria-label="メールマガジン登録フォーム" class="Form">
+<input type="text" name="name" placeholder="NAME" size="40" class="Form__input">
+<input type="text" name="mail" placeholder="MAIL" size="40" class="Form__input">
+<button type="submit" value="SUBSCRIBE" class="button Form__button">SUBSCRIBE</button>
+</form>
+</section>
+
+<footer class="Footer">
+<div class="l-row l-column">
+<div class="Footer__head">
+<a href="./" class="logo">Site Name</a>
+<ul class="Menu Menu--sub">
+<li ><a href="#" class="Menu__item">Services</a></li>
+<li ><a href="#" class="Menu__item">Work</a></li>
+<li ><a href="#" class="Menu__item">About</a></li>
+<li ><a href="#" class="Menu__item">Blog</a></li>
+<li ><a href="#" class="Menu__item">Contact</a></li>
+</ul>
+</div>
+<div class="Footer__body">
+<p>Copyright information goes down here.</p>
+<p><a href="#">Legal Notice</a></p>
+<p><a href="#">Privacy policy</a></p>
+</div>
+<ul class="Footer__foot SNS">
+<li class="SNS__item"><a class="fab fa-facebook" href="#"><span class="SNS__text">Facebook</span></a></li>
+<li class="SNS__item"><a class="fab fa-youtube" href="#"><span class="SNS__text">Youtube</span></a></li>
+<li class="SNS__item"><a class="fab fa-twitter" href="#"><span class="SNS__text">twitter</span></a></li>
+<li class="SNS__item"><a class="fab fa-linkedin" href="#"><span class="SNS__text">LinkedIn</span></a></li>
+<li class="SNS__item"><a class="fab fa-flickr" href="#"><span class="SNS__text">Flickr</span></a></li>
+<li class="SNS__item"><a class="fab fa-instagram" href="#"><span class="SNS__text">Instagram</span></a></li>
+<li class="SNS__item"><a class="fab fa-yelp" href="#"><span class="SNS__text">Yelp</span></a></li>
+</ul>
+</div>
+</footer>
+</div><!-- wrapper end -->
 <script src="./dist/js/main.min.js"></script>
 <script>
-    imageSlide('Slide', 2);
+imageSlide('Slide', 2);
 </script>
 </body>
 </html>
