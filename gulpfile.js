@@ -24,7 +24,7 @@ gulp.task('bs', function() {
   browserSync.init({
     server: {
       baseDir: "./",
-      index  : "campaign.html" 
+      index  : "article.html" 
     },
     notify  : true,
     xip     : false
