@@ -1,0 +1,57 @@
+.sectionLabel {
+	display: flex;
+	flex: 1 1 auto;
+	align-items: center;
+	padding: 14px inherit;
+	padding-bottom: 40px !important;
+	line-height: 1.0;
+	color: $color-main-text;
+	text-transform: uppercase;
+	font-size: 22px;
+
+	@include menu-font;
+
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+		flex: 1 0 10%;
+		height: 0;
+		border-bottom: 1px solid $color-main-text;
+	}
+	&::before {
+		margin-right: 22px;
+	}
+	&::after {
+		margin-left: 22px;
+	}
+}
+
+.logo {
+	text-transform: uppercase;
+	font-size: 26px;
+	@include menu-font;
+}
+
+.l-fitImg {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin-bottom: 20px;
+}
+
+.articleLabelL {
+	padding: 0 0 20px;
+	font-weight: normal;
+	font-size: 34px;
+}
+.articleLabelM {
+	padding: 40px 0 20px;
+	font-weight: normal;
+	font-size: 26px;
+}
+.articleLabelS {
+	padding: 0 0 20px;
+	font-weight: normal;
+	font-size: 34px;
+}

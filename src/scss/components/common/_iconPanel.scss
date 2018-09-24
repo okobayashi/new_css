@@ -1,0 +1,44 @@
+.IconPanel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include mq-sp {
+		display: block;
+		padding: $space-unit 0;
+	}
+	&__head {
+		padding: $space-unit;
+		font-stretch: 18px;
+		text-align: center;
+		@include mq-sp {
+			margin-left: 52px;
+			padding: 0 0 15px;
+			text-align: left;
+			font-size: 16px;
+		}
+	}
+	&__body {
+		max-width: 100%;
+		padding: $space-unit*1.5;
+		line-height: 1.5;
+		@include mq-sp {
+			margin-left: 52px;
+			padding: 0;
+			font-size: 12px;
+		}
+	}
+	// font-awesomeでアイコンを設定する
+	&__icon {
+		margin-bottom: $space-unit;
+		padding: $sp-space-unit;
+		font-size: 26px;
+		color: $color-link;
+		@include mq-sp {
+			float: left;
+			margin-bottom: 0;
+			padding-left: 0;
+			width: 52px;
+			text-align: center;
+		}
+	}
+}
